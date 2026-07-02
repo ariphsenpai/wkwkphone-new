@@ -3,374 +3,335 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wkwkphone — HP Bekas Berkualitas</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>wkwkphone — Jual Beli HP Bekas Berkualitas</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar">
-    <div class="container nav-wrapper">
-        <a href="#" class="logo">wkwkphone</a>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#products">Produk</a></li>
-            <li><a href="#gallery">Galeri</a></li>
-            <li><a href="#promo">Promo</a></li>
-            <li><a href="#reviews">Testimoni</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#about">Tentang</a></li>
-            <li><a href="#contact">Kontak</a></li>
-        </ul>
-        <div class="nav-actions">
-            <a href="#" class="nav-icon" id="wishlistBtn" title="Wishlist">
-                <i class="fas fa-heart"></i>
-                <span class="badge" id="wishlistBadge">0</span>
-            </a>
-            <a href="#" class="nav-icon" id="cartBtn" title="Keranjang">
-                <i class="fas fa-shopping-cart"></i>
-                <span class="badge" id="cartBadge">0</span>
-            </a>
-            <a href="admin/" class="nav-icon" title="Admin">
-                <i class="fas fa-user-shield"></i>
-            </a>
-            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
-                <span></span><span></span><span></span>
-            </div>
+<!-- Top Bar -->
+<div class="top-bar">
+    <div class="container top-bar-content">
+        <span><i class="fas fa-phone-alt"></i> Hotline: 0812-3456-7890</span>
+        <span><i class="fas fa-truck"></i> Gratis Ongkir Min. Rp500rb</span>
+        <span><i class="fas fa-shield-alt"></i> Garansi 7 Hari</span>
+    </div>
+</div>
+
+<!-- Header -->
+<header class="main-header">
+    <div class="container header-content">
+        <a href="#" class="logo">
+            <span class="logo-icon"><i class="fas fa-mobile-alt"></i></span>
+            <span class="logo-text">wkwkphone</span>
+        </a>
+        
+        <div class="search-bar">
+            <input type="text" placeholder="Cari HP bekas berkualitas..." id="searchInput">
+            <button class="search-btn"><i class="fas fa.image.png"/></i></button>
         </div>
+        
+        <div class="header-actions">
+            <a href="#" class="action-btn">
+                <i class="far fa-heart"></i>
+                <span class="action-label">Wishlist</span>
+            </a>
+            <a href="#" class="action-btn">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="action-label">Keranjang</span>
+                <span class="cart-count">0</span>
+            </a>
+            <a href="#" class="action-btn">
+                <i class="far fa-user"></i>
+                <span class="action-label">Akun</span>
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- Navigation -->
+<nav class="main-nav">
+    <div class="container nav-content">
+        <div class="category-dropdown">
+            <button class="cat-btn">
+                <i class="fas fa-bars"></i>
+                <span>Kategori</span>
+                <i class="fas fa-chevron-down"></i>
+            </button>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">iPhone</a></li>
+            <li><a href="#">Samsung</a></li>
+            <li><a href="#">Xiaomi</a></li>
+            <li><a href="#">OPPO</a></li>
+            <li><a href="#">Vivo</a></li>
+            <li><a href="#">Promo</a></li>
+        </ul>
     </div>
 </nav>
 
-<!-- ============ HERO ============ -->
-<section class="hero" id="home">
-    <div class="container hero-content">
-        <div class="hero-badge">Toko HP Bekas Terpercaya #1</div>
-        <h1>HP Bekas <span class="highlight">Berkualitas</span></h1>
-        <p>Dapatkan smartphone second berkualitas dengan harga terbaik. Bergaransi 7 hari, original 100%, dan sudah teruji 30+ titik pemeriksaan.</p>
-        <div class="hero-cta">
-            <a href="#products" class="btn-primary">Lihat Produk</a>
-            <a href="#portfolio" class="btn-secondary">Portfolio Kami</a>
+<!-- Hero Banner -->
+<section class="hero-banner">
+    <div class="container">
+        <div class="hero-slider">
+            <div class="hero-slide active">
+                <div class="hero-text">
+                    <span class="hero-tag">Promo Spesial</span>
+                    <h1>iPhone 13 Pro Max<br><span class="highlight">Mulai 7 Jutaan</span></h1>
+                    <p>Kondisi 95%, fullset, bergaransi resmi</p>
+                    <a href="#" class="btn-primary">Beli Sekarang <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="hero-img">
+                    <img src="https://images.unsplash.com/photo-1632661674594-b618f8174a1e?w=500&auto=format&fit=crop&q=60" alt="iPhone">
+                </div>
+            </div>
         </div>
-        <div class="hero-stats">
-            <div class="stat-item">
-                <span class="stat-num" id="statProducts">500+</span>
-                <span class="stat-label">HP Terjual</span>
+        <div class="hero-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+</section>
+
+<!-- Features -->
+<section class="features">
+    <div class="container">
+        <div class="feature-grid">
+            <div class="feature-item">
+                <div class="feature-icon"><i class="fas fa-medal"></i></div>
+                <div class="feature-text">
+                    <h4>Garansi 7 Hari</h4>
+                    <p>Uang kembali jika tidak sesuai</p>
+                </div>
             </div>
-            <div class="stat-item">
-                <span class="stat-num" id="statCustomers">300+</span>
-                <span class="stat-label">Pelanggan Puas</span>
+            <div class="feature-item">
+                <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+                <div class="feature-text">
+                    <h4>Original 100%</h4>
+                    <p>Tersertifikasi dan teruji</p>
+                </div>
             </div>
-            <div class="stat-item">
-                <span class="stat-num" id="statYears">3+</span>
-                <span class="stat-label">Tahun Berdiri</span>
+            <div class="feature-item">
+                <div class="feature-icon"><i class="fas fa-shipping-fast"></i></div>
+                <div class="feature-text">
+                    <h4>Pengiriman Cepat</h4>
+                    <p>1-3 hari ke seluruh Indonesia</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon"><i class="fas fa-headset"></i></div>
+                <div class="feature-text">
+                    <h4>Layanan 24/7</h4>
+                    <p>Siap membantu kapan saja</p>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- ============ PRODUCTS ============ -->
+<!-- Categories -->
+<section class="categories">
+    <div class="container">
+        <h2 class="section-title">Kategori <span>Produk</span></h2>
+        <div class="category-grid">
+            <a href="#" class="category-card">
+                <div class="cat-img">
+                    <img src="https://images.unsplash.com/photo-1510557880202-c28262baf9d1?w=300&auto=format&fit=crop&q=60" alt="iPhone">
+                </div>
+                <span class="cat-name">iPhone</span>
+            </a>
+            <a href="#" class="category-card">
+                <div class="cat-img">
+                    <img src="https://images.unsplash.com/photo-1610945265064-f4d69d82447a?w=300&auto=format&fit=crop&q=60" alt="Samsung">
+                </div>
+                <span class="cat-name">Samsung</span>
+            </a>
+            <a href="#" class="category-card">
+                <div class="cat-img">
+                    <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff23?w=300&auto=format&fit=crop&q=60" alt="Xiaomi">
+                </div>
+                <span class="cat-name">Xiaomi</span>
+            </a>
+            <a href="#" class="category-card">
+                <div class="cat-img">
+                    <img src="https://images.unsplash.com/photo-1574940509364-0466bf2fb8b9?w=300&auto=format&fit=crop&q=60" alt="OPPO">
+                </div>
+                <span class="cat-name">OPPO</span>
+            </a>
+            <a href="#" class="category-card">
+                <div class="cat-img">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&auto=format&fit=crop&q=60" alt="Vivo">
+                </div>
+                <span class="cat-name">Vivo</span>
+            </a>
+            <a href="#" class="category-card">
+                <div class="cat-img">
+                    <img src="https://images.unsplash.com/photo-1527864552594-5d8c24d26309?w=300&auto=format&fit=crop&q=60" alt="Realme">
+                </div>
+                <span class="cat-name">Realme</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Flash Sale -->
+<section class="flash-sale">
+    <div class="container">
+        <div class="flash-header">
+            <div class="flash-title">
+                <i class="fas fa-bolt"></i>
+                <h2>Flash Sale</h2>
+                <span class="flash-timer">Berakhir dalam: <span id="timer">05:59:59</span></span>
+            </div>
+            <a href="#" class="view-all">Lihat Semua <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="product-grid" id="flashSaleGrid">
+            <!-- Products via JS -->
+        </div>
+    </div>
+</section>
+
+<!-- Products Section -->
 <section class="products" id="products">
     <div class="container">
-        <h2 class="section-title">Produk Pilihan</h2>
-        <p class="section-desc">Koleksi smartphone bekas berkualitas dengan kondisi terbaik</p>
-        <div class="product-toolbar">
-            <div class="product-filters">
-                <button class="filter-btn active" data-filter="all">Semua</button>
-                <button class="filter-btn" data-filter="iphone">iPhone</button>
-                <button class="filter-btn" data-filter="samsung">Samsung</button>
-                <button class="filter-btn" data-filter="xiaomi">Xiaomi</button>
-                <button class="filter-btn" data-filter="oppo">OPPO</button>
-            </div>
-            <div class="product-search">
-                <input type="text" id="productSearch" placeholder="Cari produk..." />
-                <i class="fas fa-search"></i>
+        <div class="section-header">
+            <h2 class="section-title">Rekomendasi <span>Untukmu</span></h2>
+            <div class="filter-tabs">
+                <button class="tab-btn active" data-tab="all">Semua</button>
+                <button class="tab-btn" data-tab="iphone">iPhone</button>
+                <挤zhas data-tab="samsung">Samsung</button>
+                <button class="tab-btn" data-tab="xiaomi">Xiaomi</button>
+                的按钮 class="tab-btn" data-tab="oppo">OPPO</button>
             </div>
         </div>
         <div class="product-grid" id="productGrid">
-            <!-- Injected by JS -->
+            <!-- Products via JS -->
         </div>
-        <div class="product-grid-actions">
-            <button class="btn-outline" id="loadMoreProducts">Lihat Semua Produk →</button>
+        <div class="text-center">
+            <button class="btn-loadmore" id="loadMore">Lihat Lebih Banyak</button>
         </div>
     </div>
 </section>
 
-<!-- ============ PHOTO GALLERY (Drag & Drop) ============ -->
-<section class="gallery" id="gallery">
+<!-- Promo Banner -->
+<section class="promo-section">
     <div class="container">
-        <h2 class="section-title">Galeri Produk</h2>
-        <p class="section-desc">Drag & drop untuk menyusun ulang foto produk favorit</p>
-        <div class="gallery-upload-zone" id="galleryUploadZone">
-            <i class="fas fa-cloud-upload-alt"></i>
-            <p>Seret foto ke sini atau klik untuk upload</p>
-            <input type="file" id="galleryFileInput" accept="image/*" multiple hidden />
-            <button class="btn-outline btn-sm" id="galleryUploadBtn">Pilih Foto</button>
-        </div>
-        <div class="gallery-grid" id="galleryGrid">
-            <!-- Draggable gallery items injected by JS -->
-        </div>
-    </div>
-</section>
-
-<!-- ============ PROMO / COUNTDOWN ============ -->
-<section class="promo" id="promo">
-    <div class="container promo-content">
-        <div class="promo-badge">🔥 PROMO SPESIAL</div>
-        <h2>Flash Sale Akhir Pekan</h2>
-        <p>Diskon hingga 20% untuk semua iPhone! Jangan sampai kehabisan.</p>
-        <div class="countdown" id="countdown">
-            <div class="countdown-item">
-                <span class="countdown-num" id="days">00</span>
-                <span class="countdown-label">Hari</span>
-            </div>
-            <div class="countdown-sep">:</div>
-            <div class="countdown-item">
-                <span class="countdown-num" id="hours">00</span>
-                <span class="countdown-label">Jam</span>
-            </div>
-            <div class="countdown-sep">:</div>
-            <div class="countdown-item">
-                <span class="countdown-num" id="minutes">00</span>
-                <span class="countdown-label">Menit</span>
-            </div>
-            <div class="countdown-sep">:</div>
-            <div class="countdown-item">
-                <span class="countdown-num" id="seconds">00</span>
-                <span class="countdown-label">Detik</span>
-            </div>
-        </div>
-        <a href="#products" class="btn-primary">Belanja Sekarang</a>
-    </div>
-</section>
-
-<!-- ============ WISHLIST & CART SIDEBAR ============ -->
-<div class="sidebar-overlay" id="sidebarOverlay" onclick="closeSidebar()"></div>
-
-<!-- Wishlist Sidebar -->
-<div class="sidebar" id="wishlistSidebar">
-    <div class="sidebar-header">
-        <h3><i class="fas fa-heart"></i> Wishlist</h3>
-        <button class="sidebar-close" onclick="closeSidebar()">&times;</button>
-    </div>
-    <div class="sidebar-body" id="wishlistBody">
-        <div class="sidebar-empty">
-            <i class="fas fa-heart-broken"></i>
-            <p>Belum ada produk di wishlist</p>
-        </div>
-    </div>
-    <div class="sidebar-footer">
-        <button class="btn-primary btn-sm" onclick="closeSidebar()">Tutup</button>
-    </div>
-</div>
-
-<!-- Cart Sidebar -->
-<div class="sidebar" id="cartSidebar">
-    <div class="sidebar-header">
-        <h3><i class="fas fa-shopping-cart"></i> Keranjang</h3>
-        <button class="sidebar-close" onclick="closeSidebar()">&times;</button>
-    </div>
-    <div class="sidebar-body" id="cartBody">
-        <div class="sidebar-empty">
-            <i class="fas fa-cart-plus"></i>
-            <p>Keranjang masih kosong</p>
-        </div>
-    </div>
-    <div class="sidebar-footer">
-        <div class="cart-total">
-            <span>Total:</span>
-            <span id="cartTotal">Rp 0</span>
-        </div>
-        <button class="btn-primary btn-sm" id="checkoutBtn">Checkout via WhatsApp</button>
-    </div>
-</div>
-
-<!-- ============ REVIEWS / TESTIMONIALS ============ -->
-<section class="reviews" id="reviews">
-    <div class="container">
-        <h2 class="section-title">Apa Kata Mereka</h2>
-        <p class="section-desc">Testimoni dari pelanggan setia wkwkphone</p>
-        <div class="review-summary">
-            <div class="review-rating-big">
-                <span class="rating-num">4.8</span>
-                <div class="rating-stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
+        <div class="promo-grid">
+            <div class="promo-card large">
+                <div class="promo-content">
+                    <span class="promo-tag">Trade-In</span>
+                    <h3>Tukar Tambah HP Lama</h3>
+                    <p>Dapatkan diskon hingga Rp2 juta</p>
+                    <a href="#" class="btn-outline">Selengkapnya</a>
                 </div>
-                <span class="rating-count">Berdasarkan 234 ulasan</span>
+                <img src="https://images.unsplash.com/photo-1512054502232-10a0cb64f216?w=400&auto=format&fit=crop&q=60" alt="Trade In">
             </div>
-            <button class="btn-outline" id="addReviewBtn"><i class="fas fa-pen"></i> Tulis Ulasan</button>
-        </div>
-        <div class="reviews-grid" id="reviewsGrid">
-            <!-- Injected by JS -->
-        </div>
-        <button class="btn-outline load-more-reviews" id="loadMoreReviews">Muat Lebih Banyak →</button>
-    </div>
-</section>
-
-<!-- ============ BLOG / ARTICLES ============ -->
-<section class="blog" id="blog">
-    <div class="container">
-        <h2 class="section-title">Blog & Tips</h2>
-        <p class="section-desc">Tips, trik, dan berita seputar smartphone bekas</p>
-        <div class="blog-grid" id="blogGrid">
-            <!-- Injected by JS -->
-        </div>
-        <div class="blog-actions">
-            <a href="blog/" class="btn-outline">Lihat Semua Artikel →</a>
-        </div>
-    </div>
-</section>
-
-<!-- ============ PORTFOLIO ============ -->
-<section class="portfolio" id="portfolio">
-    <div class="container">
-        <h2 class="section-title">Portfolio Kami</h2>
-        <p class="section-desc">Beberapa koleksi HP yang sudah kami restorasi dan jual</p>
-        <div class="portfolio-tabs">
-            <button class="portfolio-tab active" data-portfolio="all">Semua</button>
-            <button class="portfolio-tab" data-portfolio="iphone">iPhone</button>
-            <button class="portfolio-tab" data-portfolio="samsung">Samsung</button>
-            <button class="portfolio-tab" data-portfolio="limited">Limited Edition</button>
-        </div>
-        <div class="portfolio-grid" id="portfolioGrid">
-            <!-- Injected by JS -->
-        </div>
-    </div>
-</section>
-
-<!-- ============ ABOUT ============ -->
-<section class="about" id="about">
-    <div class="container">
-        <h2 class="section-title">Tentang wkwkphone</h2>
-        <div class="about-grid">
-            <div class="about-text">
-                <p>wkwkphone adalah toko HP bekas terpercaya yang menyediakan berbagai merek smartphone berkualitas. Setiap unit kami cek 30+ titik pengujian sebelum dijual kembali. Kami memberikan garansi 7 hari dan pengiriman ke seluruh Indonesia.</p>
-                <ul class="about-features">
-                    <li><i class="fas fa-check-circle"></i> 100% Original</li>
-                    <li><i class="fas fa-check-circle"></i> Garansi 7 Hari</li>
-                    <li><i class="fas fa-check-circle"></i> Cek 30+ Titik</li>
-                    <li><i class="fas fa-check-circle"></i> Kirim Seluruh Indonesia</li>
-                </ul>
-            </div>
-            <div class="about-stats-cards">
-                <div class="stat-card">
-                    <i class="fas fa-smile"></i>
-                    <h4>300+</h4>
-                    <p>Pelanggan Puas</p>
+            <div class="promo-card">
+                <div class="promo-content">
+                    <span class="promo-tag">Cicilan 0%</span>
+                    <h3>Cicilan Tanpa Bunga</h3>
+                    <p> tenor hingga 12 bulan</p>
+                    <a href="#" class="btn-outline">Selengkapnya</a>
                 </div>
-                <div class="stat-card">
-                    <i class="fas fa-mobile-alt"></i>
-                    <h4>500+</h4>
-                    <p>HP Terjual</p>
-                </div>
-                <div class="stat-card">
-                    <i class="fas fa-star"></i>
-                    <h4>4.8</h4>
-                    <p>Rating Rata-rata</p>
-                </div>
+                <img src="https://images.unsplash.com/photo-1563013544-824ae24b1293?w=400&auto=format&fit=crop&q=60" alt="Cicilan">
             </div>
         </div>
     </div>
 </section>
 
-<!-- ============ CONTACT ============ -->
-<section class="contact" id="contact">
+<!-- Brands -->
+<section class="brands">
     <div class="container">
-        <h2 class="section-title">Hubungi Kami</h2>
-        <p class="section-desc">Punya pertanyaan? Kami siap membantu!</p>
-        <div class="contact-wrapper">
-            <div class="contact-links">
-                <a href="https://wa.me/6281234567890" target="_blank" class="contact-card">
-                    <span class="contact-icon"><i class="fab fa-whatsapp"></i></span>
-                    <span class="contact-info">
-                        <strong>WhatsApp</strong>
-                        <small>+62 812-3456-7890</small>
-                    </span>
-                </a>
-                <a href="https://t.me/wkwkphone" target="_blank" class="contact-card">
-                    <span class="contact-icon"><i class="fab fa-telegram-plane"></i></span>
-                    <span class="contact-info">
-                        <strong>Telegram</strong>
-                        <small>@wkwkphone</small>
-                    </span>
-                </a>
-                <a href="mailto:hello@wkwkphone.com" class="contact-card">
-                    <span class="contact-icon"><i class="fas fa-envelope"></i></span>
-                    <span class="contact-info">
-                        <strong>Email</strong>
-                        <small>hello@wkwkphone.com</small>
-                    </span>
-                </a>
-                <div class="contact-card">
-                    <span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
-                    <span class="contact-info">
-                        <strong>Lokasi</strong>
-                        <small>Jakarta, Indonesia</small>
-                    </span>
-                </div>
+        <h2 class="section-title">Brand <span>Populer</span></h2>
+        <div class="brand-grid">
+            <div class="brand-item"><i class="fab fa-apple"></i><span>Apple</span></div>
+            <div class="brand-item"><span class="samsung-text">SAMSUNG</span></div>
+            <div class="brand-item"><span class="xiaomi-text">xiaomi</span></div>
+            <div class="brand-item"><span>OPPO</span></div>
+            <div class="brand-item"><span>vivo</span></div>
+            <div class="brand-item"><span>realme</span></div>
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter -->
+<section class="newsletter">
+    <div class="container">
+        <div class="newsletter-content">
+            <div class="newsletter-text">
+                <h3>Dapatkan Update & Promo Terbaru</h3>
+                <p>Subscribe untuk info harga terbaik dan promo menarik</p>
             </div>
-            <form class="contact-form" id="contactForm">
-                <input type="text" placeholder="Nama Anda" required />
-                <input type="email" placeholder="Email" required />
-                <textarea rows="4" placeholder="Pesan..." required></textarea>
-                <button type="submit" class="btn-primary">Kirim Pesan</button>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Masukkan email Anda">
+                <button type="submit">Subscribe</button>
             </form>
         </div>
     </div>
 </section>
 
-<!-- ============ FOOTER ============ -->
-<footer class="footer">
-    <div class="container footer-grid">
-        <div class="footer-brand">
-            <a href="#" class="logo">wkwkphone</a>
-            <p>HP Bekas Berkualitas, Harga Terbaik.</p>
-            <div class="footer-social">
-                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+<!-- Footer -->
+<footer class="main-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>wkwkphone</span>
+                </div>
+                <p>Toko HP bekas berkualitas dengan harga terbaik. Bergaransi, original, dan terpercaya.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Kategori</h4>
+                <ul>
+                    <li><a href="#">iPhone</a></li>
+                    <li><a href="#">Samsung</a></li>
+                    <li><a href="#">Xiaomi</a></li>
+                    <li><a href="#">OPPO</a></li>
+                    <li><a href="#">Vivo</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Layanan</h4>
+                <ul>
+                    <li><a href="#">Cara Beli</a></li>
+                    <li><a href="#">Cara Jual</a></li>
+                    <li><a href="#">Trade-In</a></li>
+                    <li><a href="#">Garansi</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Kontak</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Jakarta Selatan</li>
+                    <li><i class="fas fa-phone-alt"></i> 0812-3456-7890</li>
+                    <li><i class="fas fa-envelope"></i> hello@wkwkphone.id</li>
+                    <li><i class="fas fa-clock"></i> Senin-Sabtu, 09:00-21:00</li>
+                </ul>
             </div>
         </div>
-        <div class="footer-links">
-            <h5>Menu</h5>
-            <a href="#products">Produk</a>
-            <a href="#gallery">Galeri</a>
-            <a href="#reviews">Testimoni</a>
-            <a href="#blog">Blog</a>
+        <div class="footer-bottom">
+            <p>© 2026 wkwkphone. All rights reserved.</p>
+            <div class="payment-icons">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fas fa-university"></i>
+            </div>
         </div>
-        <div class="footer-links">
-            <h5>Layanan</h5>
-            <a href="#">Garansi</a>
-            <a href="#">Pengiriman</a>
-            <a href="#">Cara Order</a>
-            <a href="#">Syarat & Ketentuan</a>
-        </div>
-        <div class="footer-links">
-            <h5>Kontak</h5>
-            <a href="https://wa.me/6281234567890">WhatsApp</a>
-            <a href="mailto:hello@wkwkphone.com">Email</a>
-            <a href="admin/">Admin Panel</a>
-        </div>
-    </div>
-    <div class="container footer-bottom">
-        <p>&copy; 2026 wkwkphone. All rights reserved.</p>
     </div>
 </footer>
 
-<!-- Scroll to top -->
-<button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
-    <i class="fas fa-arrow-up"></i>
-</button>
-
-<script src="js/data.js"></script>
-<script src="js/script.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
