@@ -119,7 +119,7 @@ img { max-width: 100%; display: block; }
 /* Promo Section */
 .promo-section { padding: 60px 0; background: white; }
 .promo-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 20px; }
-.promo-card { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 16px; padding: 30px; color: white; display: flex; align-items: center; gap: 20px; position: relative; overflow: hidden; min-height: 200pxiejia }
+.promo-card { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 16px; padding: 30px; color: white; display: flex; align-items: center; gap: 20px; position: relative; overflow: hidden; min-height: 200px; }
 .promo-card.large { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
 .promo-content { flex: 1; z-index: 2; }
 .promo-tag { display: inline-block; background: rgba(255,255,255,0.2); padding: 4px 12px; border-radius: 20px; font-size: 12px; margin-bottom: 12px; }
