@@ -1,15 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wkwkphone</title>
+    <title>wkwkphone — HP Bekas Berkualitas</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Welcome to wkwkphone</h1>
-    <p>This is the start of the wkwkphone website.</p>
-    <script src="js/script.js"></script>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="container nav-wrapper">
+        <a href="#" class="logo">wkwkphone</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Produk</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero" id="home">
+    <div class="container hero-content">
+        <h1>HP Bekas <span class="highlight">Berkualitas</span></h1>
+        <p>Dapatkan smartphone second berkualitas dengan harga terbaik. Bergaransi, original, dan sudah teruji.</p>
+        <a href="#products" class="btn-primary">Lihat Produk</a>
+    </div>
+</section>
+
+<!-- Products -->
+<section class="products" id="products">
+    <div class="container">
+        <h2 class="section-title">Produk Pilihan</h2>
+        <div class="product-grid" id="productGrid">
+            <!-- Injected by JS -->
+        </div>
+    </div>
+</section>
+
+<!-- About -->
+<section class="about" id="about">
+    <div class="container">
+        <h2 class="section-title">Tentang wkwkphone</h2>
+        <p class="about-text">
+            wkwkphone adalah toko HP bekas terpercaya yang menyediakan berbagai merek smartphone berkualitas.
+            Setiap unit kami cek 30+ titik pengujian sebelum dijual kembali. Kami memberikan garansi 7 hari
+            dan pengiriman ke seluruh Indonesia.
+        </p>
+    </div>
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+    <div class="container">
+        <h2 class="section-title">Hubungi Kami</h2>
+        <div class="contact-links">
+            <a href="https://wa.me/6281234567890" target="_blank" class="contact-card">
+                <span class="contact-icon">💬</span>
+                <span>WhatsApp</span>
+            </a>
+            <a href="https://t.me/wkwkphone" target="_blank" class="contact-card">
+                <span class="contact-icon">✈️</span>
+                <span>Telegram</span>
+            </a>
+            <a href="mailto:hello@wkwkphone.com" class="contact-card">
+                <span class="contact-icon">📧</span>
+                <span>Email</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2026 wkwkphone. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>
-EOF && mkdir -p css js && [ -f README.md ] || echo '# wkwkphone-website\n\nThis is the wkwkphone website project.' > README.md && git add . && git commit -m "Initial commit for wkwkphone project" && git push origin main
